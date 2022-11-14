@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: 20.168.202.58
   gather_facts: true
   roles:
     - { role: docker-registry }
