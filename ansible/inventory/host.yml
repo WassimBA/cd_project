@@ -1,4 +1,4 @@
-localhost ansible_connection=local
+20.168.202.58 ansible_connection=local
 
 [Server]
 20.168.202.58
