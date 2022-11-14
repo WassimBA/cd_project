@@ -2,9 +2,9 @@
 # tasks file for docker
 - name: create image docker
   docker_image:
-    name: lcangular:latest
+    name: cd_angular:latest
     build:
-     path: /var/lib/jenkins/workspace/LCpipeline
+     path: /var/lib/jenkins/workspace/cd_angular
      pull: no
     source: build
     state: present
@@ -12,7 +12,7 @@
 - name: run container docker
   docker_container:
     name: myappcontainer
-    image: lcangular:latest
+    image: cd_angular:latest
     state: started
     recreate: true
     ports:
