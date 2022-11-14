@@ -1,14 +1,14 @@
----
-# tasks file for docker
-- name: create image docker
-  docker_image:
-    name: cd-angular:latest
-    build:
-     path: /var/lib/jenkins/workspace/cd-angular
-     pull: no
+--- 
+- 
+  docker_image: 
+    build: 
+      path: /var/lib/jenkins/workspace/cd-angular
+      pull: false
+    force_source: true
+    name: "cd-angular:latest"
     source: build
     state: present
-    force_source: true
+  name: "create image docker"
 - name: run container docker
   docker_container:
     name: myappcontainer
