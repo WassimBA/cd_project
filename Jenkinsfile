@@ -31,7 +31,7 @@ pipeline {
                    }
           }         
                    
-        stage('push to dockerhub')
+        stage('push to hub')
         {
              steps {
                     script{
