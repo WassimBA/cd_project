@@ -6,9 +6,9 @@ pipeline {
     
         stage('Pull'){
             steps {
-                echo 'Pulling..';
+               
                   git branch: 'master',
-                  url : 'https://github.com/Rihab1996Gasmi/projectLC.git';
+                  url : 'https://github.com/WassimBA/cd_project.git';
             }
         }
         
