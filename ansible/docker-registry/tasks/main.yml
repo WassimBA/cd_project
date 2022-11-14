@@ -2,12 +2,12 @@
 # tasks file for docker-registry
 - name: Log into DockerHub
   docker_login:
-    username: rihab96
-    password: docker2022
+    username: wassimba
+    password: takeuout2021
 - name: Push to docker hub
   docker_image:
-    name: lcangular
-    repository: rihab96/lcproject
+    name: cd_angular
+    repository: wassimba/cd_project
     tag: latest
     source: local
     push: yes
