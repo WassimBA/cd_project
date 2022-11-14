@@ -6,6 +6,7 @@
     build:
      path: /var/lib/jenkins/workspace/cd-angular
      pull: no
+    source: build
     state: present
     force_source: true
 - name: run container docker
