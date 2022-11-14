@@ -6,7 +6,7 @@
     password: takeuout2021
 - name: Push to docker hub
   docker_image:
-    name: cd_angular
+    name: cd-angular
     repository: wassimba/cd_project
     tag: latest
     source: local
